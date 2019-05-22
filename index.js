@@ -1,6 +1,6 @@
 /*Michael Gorokhovsky	
 	500681974 */
-const mapKey = "AIzaSyD3ocEcQmg9Zw6TolLbOJrQnPZpCi2lYQU";
+const mapKey = "*********************";
 
 var map, infoWindow;
 var wW;
