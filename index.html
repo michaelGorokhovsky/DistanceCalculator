@@ -1,0 +1,52 @@
+<!-- Michael Gorokhovsky
+	500681974 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <h1> Location app</h1>
+  <div class="mapContainer">
+  <section id="map"> </section> 
+  <p> After getting your initial position, please select anywhere on the map to change your location </p>
+  </div>
+  <div class="dropContainer">
+  <h1> Drop File Below </h1>
+  <div id="drop-area">
+	<form class="my-form">
+		<p>Upload your text file by dragging and dropping it onto the dashed region</p>
+		<input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+		
+	</form>
+	</div>
+	</div>
+	<!--<div id="fileOutputContainer"> -->
+	<table>
+	<tr>
+		<td>The coordinates from the map are: </td>
+		<td><div id="mResult"> </div></td>
+	</tr>
+	<tr>
+		<td>The coordinates from the text file are:</td>
+		<td><div id="fileOutput"> </div></td>
+	</tr>
+	<tr>
+		<td>The distance between both of your coordinates (in KM) is:</td>
+		<td><div id="distance"> </div></td>
+	</tr>
+	</table>
+	
+	<!--</div>
+	<!--<div id="distanceContainer"> -->
+	<!--</div>-->
+	<!--<div id="mapResultContainer"> -->
+	<!--</div>-->
+	<script  src="index.js"></script> 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3ocEcQmg9Zw6TolLbOJrQnPZpCi2lYQU&callback=initMap"
+    async defer></script>
+  </body>
+</html>
